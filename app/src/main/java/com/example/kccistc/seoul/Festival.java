@@ -26,8 +26,8 @@ public class Festival extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.AddFragment(new Festival_fragment_1(), "축제-문화·예술");
-        adapter.AddFragment(new Festival_Fragment_2(), "문화교양/강좌");
+        adapter.AddFragment(new Festival_fragment_1(), "축제"+"\n"+"문화·예술");
+        adapter.AddFragment(new Festival_Fragment_2(), "문화교양"+"\n"+"/강좌");
         adapter.AddFragment(new Festival_Fragment_3(), "전시/미술");
         adapter.AddFragment(new Festival_Fragment_4(), "클래식");
         adapter.AddFragment(new Festival_Fragment_5(), "기타");
@@ -41,10 +41,9 @@ public class Festival extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
         ArrayList<String> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
         data.add("http://www.breaknews.com/imgdata/breaknews_com/201804/2018043013465257.jpg");
-        data.add("http://%ED%81%B4%EB%9F%BD%EB%82%A8%EB%85%80.com/wp-content/uploads/2018/05/%EC%9B%94%EB%94%94%ED%8E%984.jpg");
+        data.add("https://oojooblog.files.wordpress.com/2018/02/12.png");
         data.add("http://sharingfestival.kr/electron/images/w_visual.png");
-        data.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPF4z6N0zQAHRbuSoCCrYe7wAwdF2A8cjh98qROD4uddgFF1_vJQ");
-
+        data.add("http://www.bloter.net/wp-content/uploads/2018/02/MWU-awards-korea.jpg");
 
         autoViewPager = findViewById(R.id.autoViewpager_festival);
         AutoScrollAdapter_Food scrollAdapter_food = new AutoScrollAdapter_Food(this, data);

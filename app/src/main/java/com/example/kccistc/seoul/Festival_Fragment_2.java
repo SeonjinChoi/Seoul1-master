@@ -54,7 +54,7 @@ public class Festival_Fragment_2 extends Fragment {
 
 
     private void parseJSON() {
-        String url = "http://openapi.seoul.go.kr:8088/485a594245736c6f3432625a64736b/json/SearchConcertDetailService/1/100/";
+        String url = "http://openapi.seoul.go.kr:8088/485a594245736c6f3432625a64736b/json/SearchConcertDetailService/1/500/";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
